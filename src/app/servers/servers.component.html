@@ -1,0 +1,14 @@
+
+<button class="btn btn-primary"
+[disabled]="!allowNewServer">Add Server</button>
+<app-server></app-server>
+<app-server></app-server>
+
+
+<!-- square brackets === binding in angular
+on line 3, once the attr for html diabled is binded to our
+ts property, if we add an ! to the beginning of it it makes the
+button useable, after the default state is set to false
+
+
+-->

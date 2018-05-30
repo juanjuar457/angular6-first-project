@@ -6,7 +6,15 @@ import { Component } from '@angular/core';
 })
 
 export class ServerComponent {
+  public serverId: number = 10;
+  public serverStatus: string = 'OFF';
+
+  getServerStatus() {
+    console.log('this is before the end!');
+    return this.serverStatus;
+  }
+
 }
 
-
-// keep in mind what braden said about templateURL
+// no log on line 13
+// correct syntax with access modifiers
