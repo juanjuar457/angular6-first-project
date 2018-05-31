@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-server',
-  templateUrl: './server.component.html'
+  templateUrl: './server.component.html',
+  styleUrls: ['./server.component.css']
 })
 
 export class ServerComponent {
@@ -18,12 +19,11 @@ export class ServerComponent {
   }
 
   getColor() {
-    return this.serverStatus === 'online' ? 'green' : 'red';
+    return this.serverStatus === 'online' ? 'lightgreen' : 'crimson';
   }
 
 
 }
 
-// no log on line 13
 // correct syntax with access modifiers??? 9 an 10
 
