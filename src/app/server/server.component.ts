@@ -6,15 +6,24 @@ import { Component } from '@angular/core';
 })
 
 export class ServerComponent {
-  public serverId: number = 10;
-  public serverStatus: string = 'OFF';
+  public serverId = 10;
+  public serverStatus = 'OFF';
+
+  constructor() {
+    this.serverStatus = Math.random() > 0.5 ? 'online' : 'offline';
+  }
 
   getServerStatus() {
-    console.log('this is before the end!');
     return this.serverStatus;
   }
+
+  getColor() {
+    return this.serverStatus === 'online' ? 'green' : 'red';
+  }
+
 
 }
 
 // no log on line 13
-// correct syntax with access modifiers
+// correct syntax with access modifiers??? 9 an 10
+
