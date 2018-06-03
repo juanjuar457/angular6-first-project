@@ -33,7 +33,7 @@ export class ServersComponent implements OnInit  {
 
   onClickCounter() {
     this.serverCount = this.serverCount + 1;
-    console.log('counterhere!');
+    console.log(this.serverCount);
   }
 }
 
